@@ -26,7 +26,7 @@ try {
 
 new Promise((resolve, reject) => resolve())
   .then()
-  .finally(() => console.log("Finally en una promesa"));
+  .finally(() => console.log("(ES9) Promise Finally"));
 
 (function restFunc(first, second, ...args) {
   console.log("rest operator:", args);
