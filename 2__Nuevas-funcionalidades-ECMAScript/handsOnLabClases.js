@@ -1,4 +1,3 @@
-
 class Contador {
     contador;
     #_responsable;
@@ -14,6 +13,12 @@ class Contador {
     contar () {
         this.contador++;
         Contador.contadorGlobal++;
+    }
+    getCuentaIndividual() {
+        return this.contador;
+    }
+    getCuentaGlobal() {
+        return Contador.contadorGlobal;
     }
 }
 
