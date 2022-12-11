@@ -8,17 +8,17 @@ const dividir = (dividendo, divisor) => {
   });
 };
 
-// dividir(6, 2).then(console.log).catch(console.error);
+dividir(6, 2).then(console.log).catch(console.error);
 
 async function funcionAsincrona() {
   try {
     let resultado = await dividir(10, 5);
     console.log(resultado);
-    console.log("been here");
+    console.log("been here funcionAsincrona");
   } catch (err) {
     console.log(err);
   }
 }
 
 funcionAsincrona();
-console.log("been here al finall!");
+console.log("been here final del archivo");
