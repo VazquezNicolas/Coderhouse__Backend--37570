@@ -1,14 +1,16 @@
 const dividir = (dividendo, divisor) => {
   return new Promise((resolve, reject) => {
-    if (divisor === 0) {
-      reject("No se puede dividir por cero");
-    } else {
-      resolve(dividendo / divisor);
-    }
+    setTimeout(() => {
+      if (divisor === 0) {
+        reject("No se puede dividir por cero");
+      } else {
+        resolve(dividendo / divisor);
+      }
+    }, 3000);
   });
 };
 
-dividir(6, 2).then(console.log).catch(console.error);
+// dividir(6, 2).then(console.log).catch(console.error);
 
 async function funcionAsincrona() {
   try {
