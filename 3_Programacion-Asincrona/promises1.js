@@ -13,6 +13,7 @@ const dividir = (dividendo, divisor) => {
 // dividir(6, 2).then(console.log).catch(console.error);
 
 async function funcionAsincrona() {
+  console.log("asdasdasdss");
   try {
     let resultado = await dividir(10, 5);
     console.log(resultado);
